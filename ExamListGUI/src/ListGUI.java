@@ -7,11 +7,14 @@ import javax.swing.SpringLayout;
 import javax.swing.JScrollPane;
 import javax.swing.JPanel;
 import java.awt.GridLayout;
+import javax.swing.JLabel;
+import javax.swing.JTextField;
 
 public class ListGUI {
 
 	private JFrame frame;
 	private JPanel panel;
+	private JTextField textField;
 
 	/**
 	 * Launch the application.
@@ -61,6 +64,23 @@ public class ListGUI {
 		item.setBackground(Color.red); // 배경색 지정
 		item.setPreferredSize(new Dimension(0, 300)); // 아이템의 너비 높이 지정
 		panel.add(item);
+		item.setLayout(null);
+		
+		// 제목 라벨 추가
+		JLabel lblNewLabel = new JLabel("\uC81C\uBAA9"); 
+		lblNewLabel.setBounds(22, 37, 112, 29);
+		item.add(lblNewLabel);
+		
+		// 텍스트 필드 추가
+		textField = new JTextField();
+		textField.setBounds(22, 87, 216, 35);
+		item.add(textField);
+		textField.setColumns(10);
+		
+		// 내용 라벨 추가
+		JLabel lblNewLabel_1 = new JLabel("\uB0B4\uC6A9");
+		lblNewLabel_1.setBounds(22, 162, 112, 29);
+		item.add(lblNewLabel_1);
 		
 		JPanel item2 = new JPanel(); // 두 번째 아이템 추가
 		item2.setBackground(Color.blue); // 배경색 지정
