@@ -3,6 +3,8 @@ import java.awt.EventQueue;
 import javax.swing.JFrame;
 import javax.swing.SpringLayout;
 import javax.swing.JScrollPane;
+import javax.swing.JPanel;
+import java.awt.GridLayout;
 
 public class ListGUI {
 
@@ -47,5 +49,9 @@ public class ListGUI {
 		springLayout.putConstraint(SpringLayout.SOUTH, scrollPane, 443, SpringLayout.NORTH, frame.getContentPane());
 		springLayout.putConstraint(SpringLayout.EAST, scrollPane, 466, SpringLayout.WEST, frame.getContentPane());
 		frame.getContentPane().add(scrollPane);
+		
+		JPanel panel = new JPanel();
+		scrollPane.setViewportView(panel);
+		panel.setLayout(new GridLayout(0, 1, 0, 0));
 	}
 }
