@@ -62,16 +62,12 @@ public class ListGUI {
 		
 		//첫 번째 아이템 추가
 		addItem();
-		
-		JPanel item2 = new JPanel(); // 두 번째 아이템 추가
-		item2.setBackground(Color.blue); // 배경색 지정
-		item2.setPreferredSize(new Dimension(0, 300)); // 아이템의 너비 높이 지정
-		panel.add(item2);
-		
-		JPanel item3 = new JPanel(); // 두 번째 아이템 추가
-		item3.setBackground(Color.green); // 배경색 지정
-		item3.setPreferredSize(new Dimension(0, 300)); // 아이템의 너비 높이 지정
-		panel.add(item3);
+
+		//두 번째 아이템 추가
+		addItem();
+				
+		//세 번째 아이템 추가
+		addItem();
 	}
 	
 	public void addItem() {
