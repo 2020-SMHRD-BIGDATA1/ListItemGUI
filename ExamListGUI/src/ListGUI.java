@@ -60,6 +60,21 @@ public class ListGUI {
 		scrollPane.setViewportView(panel);
 		panel.setLayout(new GridLayout(0, 1, 0, 0));
 		
+		//첫 번째 아이템 추가
+		addItem();
+		
+		JPanel item2 = new JPanel(); // 두 번째 아이템 추가
+		item2.setBackground(Color.blue); // 배경색 지정
+		item2.setPreferredSize(new Dimension(0, 300)); // 아이템의 너비 높이 지정
+		panel.add(item2);
+		
+		JPanel item3 = new JPanel(); // 두 번째 아이템 추가
+		item3.setBackground(Color.green); // 배경색 지정
+		item3.setPreferredSize(new Dimension(0, 300)); // 아이템의 너비 높이 지정
+		panel.add(item3);
+	}
+	
+	public void addItem() {
 		JPanel item = new JPanel(); // 첫 번째 아이템 추가
 		item.setBackground(Color.red); // 배경색 지정
 		item.setPreferredSize(new Dimension(0, 300)); // 아이템의 너비 높이 지정
@@ -81,19 +96,5 @@ public class ListGUI {
 		JLabel lblNewLabel_1 = new JLabel("\uB0B4\uC6A9");
 		lblNewLabel_1.setBounds(22, 162, 112, 29);
 		item.add(lblNewLabel_1);
-		
-		JPanel item2 = new JPanel(); // 두 번째 아이템 추가
-		item2.setBackground(Color.blue); // 배경색 지정
-		item2.setPreferredSize(new Dimension(0, 300)); // 아이템의 너비 높이 지정
-		panel.add(item2);
-		
-		JPanel item3 = new JPanel(); // 두 번째 아이템 추가
-		item3.setBackground(Color.green); // 배경색 지정
-		item3.setPreferredSize(new Dimension(0, 300)); // 아이템의 너비 높이 지정
-		panel.add(item3);
-	}
-	
-	public void addItem() {
-		
 	}
 }
