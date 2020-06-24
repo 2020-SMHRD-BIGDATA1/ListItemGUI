@@ -9,6 +9,7 @@ import java.awt.GridLayout;
 public class ListGUI {
 
 	private JFrame frame;
+	private JPanel panel;
 
 	/**
 	 * Launch the application.
@@ -50,8 +51,14 @@ public class ListGUI {
 		springLayout.putConstraint(SpringLayout.EAST, scrollPane, 466, SpringLayout.WEST, frame.getContentPane());
 		frame.getContentPane().add(scrollPane);
 		
-		JPanel panel = new JPanel();
+		panel = new JPanel();
 		scrollPane.setViewportView(panel);
 		panel.setLayout(new GridLayout(0, 1, 0, 0));
+		
+		
+	}
+	
+	public void addItem() {
+		
 	}
 }
