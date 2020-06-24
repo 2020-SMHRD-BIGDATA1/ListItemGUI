@@ -60,14 +60,9 @@ public class ListGUI {
 		scrollPane.setViewportView(panel);
 		panel.setLayout(new GridLayout(0, 1, 0, 0));
 		
-		//첫 번째 아이템 추가
-		addItem();
-
-		//두 번째 아이템 추가
-		addItem();
-				
-		//세 번째 아이템 추가
-		addItem();
+		for (int i = 0; i <10; i++) {
+			addItem();
+		}
 	}
 	
 	public void addItem() {
